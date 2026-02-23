@@ -68,8 +68,8 @@ const Footer: React.FC<FooterProps> = ({ onNavigate, lang }) => {
             {t.rights}
           </div>
           <div className="flex space-x-6 text-white/30 text-xs uppercase tracking-widest font-bold">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="/privacy" onClick={(e) => handleLinkClick(e, '/privacy')} className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/terms" onClick={(e) => handleLinkClick(e, '/terms')} className="hover:text-white transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

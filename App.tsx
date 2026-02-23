@@ -12,6 +12,7 @@ import ImpactPage from './pages/ImpactPage';
 import CareersPage from './pages/CareersPage';
 import PressPage from './pages/PressPage';
 import RoamMovePage from './pages/RoamMovePage';
+import LegalPage from './pages/LegalPage';
 import LeadModal from './components/LeadModal';
 import { translations } from './translations';
 import { analytics } from './lib/analytics';
@@ -44,6 +45,8 @@ const App: React.FC = () => {
       '/impact': 'Our Impact | Sustainable Mobility for Africa',
       '/careers': 'Join Roam | Build the Future of Transport',
       '/press': 'Press & News | Roam Electric Updates',
+      '/privacy': 'Privacy Policy | Roam Electric',
+      '/terms': 'Terms of Service | Roam Electric',
       '/': 'Roam | Leading Electric Mobility in Africa'
     };
     
@@ -129,6 +132,8 @@ const App: React.FC = () => {
       case '/impact': return <ImpactPage {...pageProps} />;
       case '/careers': return <CareersPage {...pageProps} />;
       case '/press': return <PressPage {...pageProps} />;
+      case '/privacy':
+      case '/terms': return <LegalPage {...pageProps} />;
       case '/':
       default: return <HomePage onNavigate={navigate} lang={lang} />;
     }

@@ -49,6 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, theme, toggleTheme, lang, t
             <div className="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-zinc-900 border border-black/10 dark:border-white/10 rounded-xl shadow-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
               <a href="/motorcycles" onClick={(e) => handleLinkClick(e, '/motorcycles')} className="block px-4 py-3 text-sm text-black dark:text-white hover:bg-[#FF5C00] hover:text-black transition-colors font-bold uppercase tracking-widest">Motorcycles</a>
               <a href="/electric-bus" onClick={(e) => handleLinkClick(e, '/electric-bus')} className="block px-4 py-3 text-sm text-black dark:text-white hover:bg-[#FF5C00] hover:text-black transition-colors font-bold uppercase tracking-widest">Buses</a>
+              <a href="/roam-move" onClick={(e) => handleLinkClick(e, '/roam-move')} className="block px-4 py-3 text-sm text-black dark:text-white hover:bg-[#FF5C00] hover:text-black transition-colors font-bold uppercase tracking-widest">Roam Move</a>
               <a href="/charging" onClick={(e) => handleLinkClick(e, '/charging')} className="block px-4 py-3 text-sm text-black dark:text-white hover:bg-[#FF5C00] hover:text-black transition-colors font-bold uppercase tracking-widest">Charging</a>
             </div>
           </div>
@@ -92,6 +93,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, theme, toggleTheme, lang, t
           <div className="flex flex-col space-y-8 text-center">
             <a href="/motorcycles" onClick={(e) => handleLinkClick(e, '/motorcycles')} className="text-2xl font-black uppercase">Motorcycles</a>
             <a href="/electric-bus" onClick={(e) => handleLinkClick(e, '/electric-bus')} className="text-2xl font-black uppercase">Buses</a>
+            <a href="/roam-move" onClick={(e) => handleLinkClick(e, '/roam-move')} className="text-2xl font-black uppercase">Roam Move</a>
             <a href="/charging" onClick={(e) => handleLinkClick(e, '/charging')} className="text-2xl font-black uppercase">Charging</a>
             <a href="/#solutions" onClick={(e) => handleLinkClick(e, '/#solutions')} className="text-2xl font-black uppercase">{t.solutions}</a>
             <a href="/impact" onClick={(e) => handleLinkClick(e, '/impact')} className="text-2xl font-black uppercase">{t.impact}</a>
