@@ -1,0 +1,7 @@
+{
+  "name": "Roam - Electric Mobility Built for Africa",
+  "description": "A high-performance, product-driven web platform for Roam, showcasing electric motorcycles, buses, and energy infrastructure with integrated AI mobility advisory.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
